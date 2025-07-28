@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Study Scheduler</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen flex flex-col items-center p-4">
+  <div class="w-full max-w-2xl bg-white rounded-xl shadow-md p-6 mt-10">
+    <h1 class="text-3xl font-bold text-center mb-6">📚 Smart Study Scheduler</h1>
+
+    <form id="taskForm" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+      <input type="text" id="subject" placeholder="Subject" class="border p-2 rounded" required />
+      <input type="time" id="time" class="border p-2 rounded" required />
+      <select id="priority" class="border p-2 rounded">
+        <option value="High">High</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <button type="submit" class="col-span-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add Task</button>
+    </form>
+
+    <ul id="taskList" class="space-y-3"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
