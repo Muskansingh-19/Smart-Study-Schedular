@@ -29,3 +29,4 @@ smart-study-scheduler/
 ├── style.css # Custom styling
 └── script.js # JavaScript logic
 
+<img width="1920" height="814" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/e832813c-a606-4818-a42a-1e89eab2d60f" />
